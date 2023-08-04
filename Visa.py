@@ -90,7 +90,7 @@ print(R+f'➧   [+]{Y}ملك الثغرات F O X🍀')
 print(Y+f'{Bl}╚━━━━━━━━━━━━━━━━👑👑━━━━━━━━━━━━━━━━━━━╝              ')
 print('')
 Gg=input(R+f'➧[+]{Y}Enter Your Password :{Cc}')
-if Gg == 'foxxxx':
+if Gg == 'f885266545x':
 	print('')
 	print(R+f'➧[+]{Y}SUCCES PASS')
 	print('')
