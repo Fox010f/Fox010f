@@ -1,23 +1,27 @@
-import requests
-import requests,hashlib
-from time import sleep
+import sys
 import os
-try:
-    import requests
-    import termcolor,time,pyfiglet
-    import webbrowser, sys
-    import sys,time,pyfiglet,termcolor
-    import calendar
-except:
-    os.system('pip install termcolor')
-    os.system('pip install time')
-    os.system('pip install pyfiglet')
-    os.system('pip install requests')
-    os.system('pip install webbrowser')
-    os.system('pip install sys')
-    os.system('clear')
-    
-    time.sleep(2)
+required_modules = [
+    'random',     
+    'threading',
+    'requests', 
+    'termcolor', 
+    'webbrowser', 
+    'calendar', 
+    'hashlib', 
+    'uuid',
+    'string',
+    'user_agent',
+    'datetime',
+    'time',
+    'pyfiglet'
+]
+
+for module in required_modules:
+    try:
+        exec(f"import {module}")
+    except ImportError:
+        os.system(f"pip install {module}")
+os.system('clear')
 import datetime
 now = datetime.datetime.today()
 now = datetime.datetime.today()
@@ -30,7 +34,7 @@ ss = str(now.second)
 t = mm + '/' + dd + '/' + yyyy + ' ' + hour + ':' + mi + ':' + ss
 hours = now.hour
 x = datetime.datetime.now()
-g = datetime.datetime(2023, 8, 30, 0, 0, 0)
+g = datetime.datetime(2023, 11, 17, 0, 0, 0)
 now = datetime.datetime.today()
 if (x.strftime("%x"))>(g.strftime("%x")):
 	print('\n\n')
@@ -51,7 +55,7 @@ C="\033[1;36m" # Cyan
 W="\033[1;37m" # White
 PN='\033[1;35m' #BINK
 
-print('             \033[1;31m\033[131mF\033[1;33mO\033[1;34mX\033[1;35m\033[1;31m\033[1;35m اسكربت لايكات انستقرام VIP🌈  ')
+print('             \033[1;31m\033[131mA\033[1;33mL\033[1;34mI\033[1;35m\033[1;31m\033[1;35m اسكربت لايكات انستقرام VIP🌈  ')
 print('\033[1;31m--\033[1;32m-\033[1;33m---\033[1;34m--\033[1;35m--\033[1;36m--\033[1;31m--\033[1;32m--\033[1;33m--\033[1;32m--\033[1;32m--\033[1;32m--\033[1;34m-\033[1;35m--\033[1;36m--\033[1;31m--\033[1;32m--\033[1;33m--\033[1;31m--\033[1;32m---\033[1;32m--\033[1;34m--\033[1;35m--\033[1;36m--\033[1;31m--\033[1;32m--\033[1;33m--\033[1;34m--\033[1;35m--\033[1;36m--')
 Z = '\x1b[2;31m'
 G = '\x1b[1;32m'
@@ -76,21 +80,31 @@ X = '\033[1;33m'
 C = '\033[2;35m'
 B="\033[1;33m"
 print('')
-print(Y+f'             █▀▀ █░░█   {R}▄ ░ ░   {G}█▀▀ █▀▀█ █░█     ')
-print(Y+f'             █▀▀ █▄▄█   {R}░ ▀ ▀   {G}█▀▀ █░░█ ▄▀▄     ')
-print(Y+f'             ▀▀▀ ▄▄▄█   {R}▀ ░ ░   {G}▀░░ ▀▀▀▀ ▀░▀    ')
+#print(Y+f'             █▀▀ █░░█   {R}▄ ░ ░   {G}█▀▀ █▀▀█ █░█     ')
+#print(Y+f'             █▀▀ █▄▄█   {R}░ ▀ ▀   {G}█▀▀ █░░█ ▄▀▄     ')
+#print(Y+f'             ▀▀▀ ▄▄▄█   {R}▀ ░ ░   {G}▀░░ ▀▀▀▀ ▀░▀    ')
+#print('')
+pppp='A L I '
+logo = pyfiglet.figlet_format('A L I')
+print(
+    termcolor.colored(logo, color="green"))
+logo = pyfiglet.figlet_format('       a l o s h')
+print(
+    termcolor.colored(logo, color="red"))
+
 print(C+'        ✨Hello in my script✨ ')
+
 print(Y+f'{Bl}╔━━━━━━━━━━━━━━━━👑👑━━━━━━━━━━━━━━━━━━━╗               ')
-print(R+f'➧   [+]{Y}BY {R}¦  {G}F O X🕸️                     ')
+print(R+f'➧   [+]{Y}BY {R}¦  {G}{pppp}🕸️                     ')
 print('')
 
 print(R+f'➧   [+]{Y}Free {R}Like{G} Ansta🍀                  ')
 print('')
-print(R+f'➧   [+]{Y}ملك الثغرات F O X🍀')
+print(R+f'➧   [+]{Y}ملك الثغرات {pppp}🍀')
 print(Y+f'{Bl}╚━━━━━━━━━━━━━━━━👑👑━━━━━━━━━━━━━━━━━━━╝              ')
 print('')
 Gg=input(R+f'➧[+]{Y}Enter Your Password :{Cc}')
-if Gg == 'f885266545x':
+if Gg == 'Alihjkkkjgfg7gjbfjkfddhhh6jjn6777':
 	print('')
 	print(R+f'➧[+]{Y}SUCCES PASS')
 	print('')
@@ -98,11 +112,9 @@ else:
 	print('')
 	print(R+f'➧[+]ERORR PASS')
 	exit()
-	print('')
 #webbrowser.open('https://t.me/Pm_Online_haking_tablet')
-number = input(R+f'➧[+]{Y}Enter Your number like{R}:{Bl} ')
-print('')
-Token=input(R+f'➧[+]{Y}Enter Your Token{R}:{Bl} ')
+number = input(R+f'[+]{Y}Enter Your number like{R}:{Bl} ')
+Token=input(R+f'[+]{Y}Enter Your Token{R}:{Bl} ')
 print(PN+'---->start creator<----')
 # First Request
 headers1 = {
