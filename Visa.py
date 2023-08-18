@@ -1,6 +1,6 @@
 import sys
 import os
-fox_kos_omk = fox
+#fox_kos_omk = fox
 required_modules = [
     'random',     
     'threading',
